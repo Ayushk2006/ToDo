@@ -42,7 +42,7 @@ export const Todos = () => {
 
     return (
         <article>
-            <div>
+{/*             <div>
                 <Tabs currentTab={currentTab} />
 
                 {
@@ -53,7 +53,7 @@ export const Todos = () => {
                         >Remove Done Todos</button>
                     ) : null    
                 }
-            </div>
+            </div> */}
 
             <ul>
                 {
