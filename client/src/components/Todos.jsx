@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+ import { useEffect } from 'react';
 
 import { deleteTodo, getAllTodos } from '../redux/actions/index';
 import { ALL_TODOS, DONE_TODOS, ACTIVE_TODOS } from '../redux/actions/type';
