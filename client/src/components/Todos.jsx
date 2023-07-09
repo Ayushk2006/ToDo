@@ -1,4 +1,4 @@
- import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { deleteTodo, getAllTodos } from '../redux/actions/index';
 import { ALL_TODOS, DONE_TODOS, ACTIVE_TODOS } from '../redux/actions/type';
@@ -42,6 +42,19 @@ export const Todos = () => {
 
     return (
         <article>
+            <div>
+                <Tabs currentTab={currentTab} />
+
+                {
+                    todos.some(todo => todo.done) ? (
+                        <button
+                            onClick={removeDoneTodos}
+                            className="button clear"
+                        >Remove Done Todos</button>
+                    ) : null    
+                }
+            </div>
+
             <ul>
                 {
                     getTodos().map(todo => (
