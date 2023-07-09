@@ -1,8 +1,11 @@
- 
+  
 import mongoose from 'mongoose';
+import dotenv from "dotenv";
+dotenv.config();
 const Connection = ( ) => {
-    const CONNECTION_URL = 'mongodb+srv://aayushsug20cse:aayushs123@cluster0.bq21pkk.mongodb.net/?retryWrites=true&w=majority'
-    mongoose.connect(CONNECTION_URL , (err)=>{
+     
+     
+    mongoose.connect(process.env.CONNECTION_URL , (err)=>{
        if(err) 
        {
         console.log('unable to connect to the server:');
