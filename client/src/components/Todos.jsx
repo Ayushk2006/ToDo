@@ -46,7 +46,7 @@ export const Todos = () => {
                 <Tabs currentTab={currentTab} />
 
                 {
-                    todos.some(todo => todo.done) ? (
+                    todos.some((todo) => {todo.done}) ? (
                         <button
                             onClick={removeDoneTodos}
                             className="button clear"
