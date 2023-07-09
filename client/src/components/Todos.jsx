@@ -42,19 +42,6 @@ export const Todos = () => {
 
     return (
         <article>
-            <div>
-                <Tabs currentTab={currentTab} />
-
-                {
-                    todos.some(todo => todo.done) ? (
-                        <button
-                            onClick={removeDoneTodos}
-                            className="button clear"
-                        >Remove Done Todos</button>
-                    ) : null    
-                }
-            </div>
-
             <ul>
                 {
                     getTodos().map(todo => (
